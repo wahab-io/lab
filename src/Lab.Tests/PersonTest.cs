@@ -116,5 +116,12 @@ namespace Lab.Tests
             person.LastName = "Brown";
             Assert.Equal("Brown", person.LastName);
         }
+
+        [Fact]
+        public void PersonTest_FullName()
+        {
+            var person = new PersonDerived(1, "wahab", "syed");
+            Assert.Equal("wahab syed", person.FullName);
+        }
     }
 }

@@ -1,10 +1,10 @@
 SF:/Users/wahabsyed/Projects/lab/src/Lab/Person.cs
 FN:35,System.Int64 Lab.Person::get_Id()
-FNDA:12,System.Int64 Lab.Person::get_Id()
-DA:36,12
+FNDA:18,System.Int64 Lab.Person::get_Id()
+DA:36,18
 FN:40,System.String Lab.Person::get_FirstName()
-FNDA:9,System.String Lab.Person::get_FirstName()
-DA:41,9
+FNDA:15,System.String Lab.Person::get_FirstName()
+DA:41,15
 FN:42,System.Void Lab.Person::set_FirstName(System.String)
 FNDA:2,System.Void Lab.Person::set_FirstName(System.String)
 DA:43,2
@@ -15,8 +15,8 @@ DA:47,1
 BRDA:44,9,0,1
 BRDA:44,9,1,1
 FN:51,System.String Lab.Person::get_LastName()
-FNDA:9,System.String Lab.Person::get_LastName()
-DA:52,9
+FNDA:15,System.String Lab.Person::get_LastName()
+DA:52,15
 FN:53,System.Void Lab.Person::set_LastName(System.String)
 FNDA:2,System.Void Lab.Person::set_LastName(System.String)
 DA:54,2
@@ -26,46 +26,49 @@ DA:57,1
 DA:58,1
 BRDA:55,9,0,1
 BRDA:55,9,1,1
+FN:62,System.String Lab.Person::get_FullName()
+FNDA:3,System.String Lab.Person::get_FullName()
+DA:63,3
 FN:9,System.Void Lab.Person::.ctor(System.Int64)
-FNDA:6,System.Void Lab.Person::.ctor(System.Int64)
-DA:10,6
-DA:11,6
-DA:13,6
+FNDA:7,System.Void Lab.Person::.ctor(System.Int64)
+DA:10,7
+DA:11,7
+DA:13,7
 DA:14,2
-DA:15,4
-DA:16,4
-BRDA:13,9,0,5
+DA:15,5
+DA:16,5
+BRDA:13,9,0,6
 BRDA:13,9,1,1
 BRDA:13,21,0,2
-BRDA:13,21,1,4
+BRDA:13,21,1,5
 FN:17,System.Void Lab.Person::.ctor(System.Int64,System.String,System.String)
-FNDA:10,System.Void Lab.Person::.ctor(System.Int64,System.String,System.String)
-DA:18,10
-DA:19,10
-DA:21,10
+FNDA:20,System.Void Lab.Person::.ctor(System.Int64,System.String,System.String)
+DA:18,20
+DA:19,20
+DA:21,20
 DA:22,2
-DA:23,8
-DA:25,8
+DA:23,18
+DA:25,18
 DA:26,1
-DA:27,7
-DA:29,7
+DA:27,17
+DA:29,17
 DA:30,1
-DA:31,6
-DA:32,6
-BRDA:21,9,0,9
+DA:31,16
+DA:32,16
+BRDA:21,9,0,19
 BRDA:21,9,1,1
 BRDA:21,21,0,2
-BRDA:21,21,1,8
+BRDA:21,21,1,18
 BRDA:25,54,0,1
-BRDA:25,54,1,7
+BRDA:25,54,1,17
 BRDA:29,82,0,1
-BRDA:29,82,1,6
-LF:31
-LH:31
+BRDA:29,82,1,16
+LF:32
+LH:32
 BRF:16
 BRH:16
-FNF:7
-FNH:7
+FNF:8
+FNH:8
 end_of_record
 SF:/Users/wahabsyed/Projects/lab/src/Lab/Student.cs
 FN:26,System.Nullable`1<System.Double> Lab.Student::get_GPA()
@@ -106,4 +109,66 @@ BRF:2
 BRH:2
 FNF:5
 FNH:5
+end_of_record
+SF:/Users/wahabsyed/Projects/lab/src/Lab/Teacher.cs
+FN:25,Lab.Subject Lab.Teacher::get_SubjectArea()
+FNDA:9,Lab.Subject Lab.Teacher::get_SubjectArea()
+DA:26,9
+FN:27,System.Void Lab.Teacher::set_SubjectArea(Lab.Subject)
+FNDA:2,System.Void Lab.Teacher::set_SubjectArea(Lab.Subject)
+DA:28,2
+DA:29,2
+DA:30,1
+DA:31,1
+DA:32,1
+BRDA:29,7,0,1
+BRDA:29,7,1,1
+FN:36,System.Collections.Generic.IEnumerable`1<System.String> Lab.Teacher::get_ClassTitles()
+FNDA:21,System.Collections.Generic.IEnumerable`1<System.String> Lab.Teacher::get_ClassTitles()
+DA:37,21
+FN:40,System.Void Lab.Teacher::AddTitle(System.String)
+FNDA:4,System.Void Lab.Teacher::AddTitle(System.String)
+DA:41,4
+DA:42,4
+DA:43,1
+DA:45,3
+DA:46,3
+DA:47,3
+BRDA:42,9,0,1
+BRDA:42,9,1,3
+BRDA:45,39,0,3
+BRDA:45,39,1,3
+FN:49,System.Void Lab.Teacher::RemoveTitle(System.String)
+FNDA:3,System.Void Lab.Teacher::RemoveTitle(System.String)
+DA:50,3
+DA:51,3
+DA:52,1
+DA:54,2
+DA:55,1
+DA:56,1
+DA:57,1
+BRDA:51,9,0,1
+BRDA:51,9,1,2
+BRDA:54,36,0,1
+BRDA:54,36,1,1
+FN:10,System.Void Lab.Teacher::.ctor(System.Int64)
+FNDA:1,System.Void Lab.Teacher::.ctor(System.Int64)
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:15,1
+FN:17,System.Void Lab.Teacher::.ctor(System.Int64,System.String,System.String)
+FNDA:9,System.Void Lab.Teacher::.ctor(System.Int64,System.String,System.String)
+DA:18,9
+DA:19,9
+DA:20,9
+DA:21,9
+DA:22,9
+LF:30
+LH:30
+BRF:10
+BRH:10
+FNF:7
+FNH:7
 end_of_record

@@ -57,5 +57,10 @@ namespace Lab
                 _lastName = value;
             }
         }
+
+        public string FullName
+        {
+            get { return _firstName + " " + _lastName; }
+        }
     }
 }

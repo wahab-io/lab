@@ -6,45 +6,39 @@ namespace Lab
 {
     public sealed class Student : Person
     {
-        private List<int> _grades;
+        private int _sumOfGrades;
+        private int _totalClassesTaken;
 
         public Student(long id) : base(id)
         {
-            _grades = new List<int>();
+            _sumOfGrades = 0;
+            _totalClassesTaken = 0;
         }
 
         public Student(long id, string firstName, string lastName) : base(id, firstName, lastName)
         {            
-            _grades = new List<int>();
+            _sumOfGrades = 0;
+            _totalClassesTaken = 0;
         }
 
-        public float GPA
+        public double? GPA
         {
             get 
             {
-                if (_grades.Count == 0)
-                    return 0F;
-                
-                float sum = 0, total = 100 * _grades.Count;
-                foreach (var grade in _grades)
-                {
-                    sum += grade;
-                }
-                return sum / total * 4;
+                if (_totalClassesTaken > 0)
+                    return (double)_sumOfGrades / (double)_totalClassesTaken;
+                return null;
             }
         }
 
-        public void AddGrade(int grade)
+        public void AddGrade(Grade letterGrade)
         {
-            if (grade < 0 || grade > 100)
-                throw new ArgumentOutOfRangeException(nameof(grade));
-            _grades.Add(grade);
+            _sumOfGrades += (int)letterGrade;
+            _totalClassesTaken++;
         }
 
-        public override string ToString()
-        {
-            return $"{this.Id} : {this.FirstName} {this.LastName} : {GPA:0.0#}";
-        }
+        public override string ToString() => 
+            $"{this.Id} : {this.FirstName} {this.LastName} : {this.GPA}";
 
     }
 }

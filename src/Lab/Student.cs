@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Lab
 {
-    public sealed class Student : Person
+    public class Student : Person
     {
         private int _sumOfGrades;
         private int _totalClassesTaken;

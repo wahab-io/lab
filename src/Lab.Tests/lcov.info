@@ -172,3 +172,69 @@ BRH:10
 FNF:7
 FNH:7
 end_of_record
+SF:/Users/wahabsyed/Projects/lab/src/Lab/TeachingAssistant.cs
+FN:25,Lab.Subject Lab.TeachingAssistant::get_SubjectArea()
+FNDA:0,Lab.Subject Lab.TeachingAssistant::get_SubjectArea()
+DA:26,0
+FN:27,System.Void Lab.TeachingAssistant::set_SubjectArea(Lab.Subject)
+FNDA:0,System.Void Lab.TeachingAssistant::set_SubjectArea(Lab.Subject)
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+BRDA:29,7,0,0
+BRDA:29,7,1,0
+FN:34,System.Collections.Generic.IEnumerable`1<System.String> Lab.TeachingAssistant::get_ClassTitles()
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.String> Lab.TeachingAssistant::get_ClassTitles()
+DA:35,0
+FN:37,System.Void Lab.TeachingAssistant::AddTitle(System.String)
+FNDA:0,System.Void Lab.TeachingAssistant::AddTitle(System.String)
+DA:38,0
+DA:39,0
+DA:40,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+BRDA:39,9,0,0
+BRDA:39,9,1,0
+BRDA:42,38,0,0
+BRDA:42,38,1,0
+BRDA:45,68,0,0
+BRDA:45,68,1,0
+FN:49,System.Void Lab.TeachingAssistant::RemoveTitle(System.String)
+FNDA:0,System.Void Lab.TeachingAssistant::RemoveTitle(System.String)
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+BRDA:51,9,0,0
+BRDA:51,9,1,0
+BRDA:54,36,0,0
+BRDA:54,36,1,0
+FN:10,System.Void Lab.TeachingAssistant::.ctor(System.Int64)
+FNDA:0,System.Void Lab.TeachingAssistant::.ctor(System.Int64)
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void Lab.TeachingAssistant::.ctor(System.Int64,System.String,System.String)
+FNDA:0,System.Void Lab.TeachingAssistant::.ctor(System.Int64,System.String,System.String)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+LF:32
+LH:0
+BRF:12
+BRH:0
+FNF:7
+FNH:0
+end_of_record
